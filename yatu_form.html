@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八塚の情報搾取フォーム</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block; 
+            text-align: left;
+            width: 90%;
+            margin: 15px auto 5px; 
+            font-size: 0.9em;
+            color: #555;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>八塚の情報搾取フォーム</h1>
+    
+    <form action="https://script.google.com/macros/s/AKfycbxfEHwWysq1j_xarPyJomIJGuN4xRLLUVQQJnpP-hNBmVQoSCgoPLZ5Hv-G3iRalJCh/exec" method="POST">
+        
+        <label for="name">お名前</label>
+        <input type="text" id="name" placeholder="お名前を入力してください" name="お名前" required>
+        
+        <label for="birthdate">生年月日</label>
+        <input type="date" id="birthdate" name="日付" required>
+        
+        <label for="time">回答時の時刻</label>
+        <input type="time" id="time" placeholder="回答時の時刻を入力してください" name="時間" required>
+        
+        <label for="sweets">好きなお菓子</label>
+        <select id="sweets" name="お菓子">
+            <option value="きのこの山">きのこの山</option>
+            <option value="たけのこの里">たけのこの里</option>
+        </select>
+        
+        <input type="submit" value="送信する">
+    </form>
+
+</body>
+</html>
